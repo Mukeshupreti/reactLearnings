@@ -7,7 +7,7 @@ class LifeCycle1 extends Component {
     render() {
         return (
             <div>
-                <h1> Lifecycle Example</h1>
+                <h1> Lifecycle of Component</h1>
                 <Body></Body>
             </div>
         );
@@ -17,11 +17,6 @@ class LifeCycle1 extends Component {
 
 }
 
-class Random extends Component {
-    render() {
-        return <div className="App-header"> {this.props.printNumber}</div>;
-    }
-}
 
 class Body extends Component {
 
@@ -35,7 +30,7 @@ class Body extends Component {
     }
 
     generateRandom() {
-        console.log("inside generateRandom");
+        // console.log("inside generateRandom");
         this.setState({data: Math.floor(Math.random() * 10)});
     }
 
@@ -51,6 +46,52 @@ class Body extends Component {
     }
 
 
+}
+
+
+class Random extends Component {
+
+    //Lifecycle Methods
+    componentWillMount() {
+        console.log("componentWillMount")
+    }
+
+    componentDidMount() {
+        console.log("componentDidMount")
+    }
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        console.log("componentWillReceiveProps")
+
+    }
+
+    componentWillReceiveProps(nextProps) {
+        console.log("componentWillReceiveProps")
+
+    }
+
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        console.log("shouldComponentUpdate with state changed")
+
+    }
+
+    componentWillUpdate(nextProps, nextState, nextContext) {
+        console.log("componentWillUpdate")
+
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log("componentDidUpdate")
+    }
+
+    componentWillUnmount() {
+        console.log("componentWillUnmount")
+    }
+
+
+    render() {
+        return <div className="App-header"> {this.props.printNumber}</div>;
+    }
 }
 
 export default LifeCycle1;
