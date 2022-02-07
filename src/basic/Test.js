@@ -1,4 +1,4 @@
-import {Component} from "react";
+import React, { Component }  from 'react';
 
 
 export  default class Test extends Component{
@@ -6,7 +6,7 @@ export  default class Test extends Component{
     render() {
 
         return (
-            <a > Test </a>
+            <a > Test component </a>
         );
     }
 }
