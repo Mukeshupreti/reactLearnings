@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Course from "./Course";
+import "../App.css";
 
 
 export default class CourseSales extends Component {
@@ -32,7 +33,7 @@ export default class CourseSales extends Component {
                     }
                 )}
 
-                <p> Total price : {this.state.total}</p>
+                <h3> Total price          : {this.state.total}</h3>
 
 
             </div>

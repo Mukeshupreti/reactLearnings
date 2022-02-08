@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "../App.css";
 
 export default class Course extends Component {
 
@@ -12,9 +13,9 @@ export default class Course extends Component {
 
     render() {
         return (
-            <div>
-                <h1 onClick={this.calculate}> name : {this.props.name} price: {this.props.price}</h1>
-            </div>
+
+                <h3 onClick={this.calculate}> name : {this.props.name} price: {this.props.price}</h3>
+
         );
     }
 
