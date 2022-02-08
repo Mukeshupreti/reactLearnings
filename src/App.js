@@ -6,6 +6,7 @@ import Parent from "./aboutProps/Parent";
 import logo from './logo.svg';
 import Parent_state from "./aboutProps/Parent_state";
 import LifeCycle1 from "./aboutProps/LifeCycle1";
+import Blog from "./blogCopy/Blog";
 
 class App extends Component {
   render() {
@@ -26,7 +27,15 @@ class App extends Component {
 
      {/* <Parent_state></Parent_state>*/}
 
-    <LifeCycle1></LifeCycle1>
+      {/*3. Lifecycle*/}
+    {/*<LifeCycle1></LifeCycle1>*/}
+
+
+      {/*4. Blog example integration*/}
+
+      <Blog></Blog>
+
+
 
 
 
