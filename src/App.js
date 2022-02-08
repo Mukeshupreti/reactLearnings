@@ -7,9 +7,23 @@ import logo from './logo.svg';
 import Parent_state from "./aboutProps/Parent_state";
 import LifeCycle1 from "./aboutProps/LifeCycle1";
 import Blog from "./blogCopy/Blog";
+import TimerApp from "./Timer/TimerApp";
+import CourseSales from "./courseSales/CourseSales";
+
+
 
 class App extends Component {
+
+
+
   render() {
+
+   var course = [
+      { name : 'Hadoop' ,price :199 },
+      { name : 'Java' ,price :150 },
+      { name : 'React' ,price :100 }
+
+    ];
     return (
     <div>
       <div className="App-header">
@@ -33,7 +47,18 @@ class App extends Component {
 
       {/*4. Blog example integration*/}
 
-      <Blog></Blog>
+      {/*<Blog></Blog>*/}
+
+      {/* 5. Timer App*/}
+
+      {/*<TimerApp start= {Date.now()}/>*/}
+
+      {/*6. Course sales*/}
+      <CourseSales mycourse={course}/>
+
+
+
+
 
 
 
