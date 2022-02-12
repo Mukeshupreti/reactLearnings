@@ -1,6 +1,8 @@
 import React, {Component} from "react";
+
 import Course from "./Course";
 import "../App.css";
+
 
 
 export default class CourseSales extends Component {

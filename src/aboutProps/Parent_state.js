@@ -1,5 +1,7 @@
 import {Component} from "react";
 import React from "react";
+import PropTypes from 'prop-types';
+
 
 
 class Parent_state extends Component {
@@ -47,9 +49,9 @@ class Parent_state extends Component {
 
 Parent_state.propTypes = {
 
-    propObject: React.PropTypes.object,
-    propString: React.PropTypes.string,
-    propNumber: React.PropTypes.number
+    propObject: PropTypes.object,
+    propString: PropTypes.string,
+    propNumber: PropTypes.number
 
 }
 

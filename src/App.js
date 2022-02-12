@@ -8,7 +8,7 @@ import Parent_state from "./aboutProps/Parent_state";
 import LifeCycle1 from "./aboutProps/LifeCycle1";
 import Blog from "./blogCopy/Blog";
 import TimerApp from "./Timer/TimerApp";
-import CourseSales from "./courseSales/CourseSales";
+/*import CourseSales from "./courseSales/CourseSales";*/
 
 
 
@@ -51,10 +51,10 @@ class App extends Component {
 
       {/* 5. Timer App*/}
 
-      {/*<TimerApp start= {Date.now()}/>*/}
+     {/* <TimerApp start= {Date.now()}/>*/}
 
       {/*6. Course sales*/}
-      <CourseSales mycourse={course}/>
+     <CourseSales mycourse={course}/>
 
 
 
