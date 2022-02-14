@@ -10,10 +10,6 @@ A
 package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
 ?
 src/App.test.js,9/2/923703ced91ac38943d37930d9d27a7ebe8f01ad
-C
-src/basic/Header.js,5/4/548391970f46dec7a219ef6c490ed084f9f089ed
-B
-src/basic/Image.js,2/2/22874df482b6e9f9c8f1ea4e8a263bce10a5e670
 <
 src/logo.svg,6/d/6d3a8cd532ece5b4ddbd4b3b6a678ba686d300bc
 A
@@ -53,3 +49,13 @@ A
 public/index.html,f/4/f43ecdf8d666ee908aacce037b4cd72159e4741b
 F
 src/Timer/TimerApp.css,6/e/6e5fb615e5dd0dcd6b992c94dd6aa228054e6fec
+;
+src/App.css,a/a/aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
+I
+src/courseSales/Course.js,0/d/0d6bbd1ca5c0f0d75a863f78acd48ed4365057d0
+N
+src/courseSales/CourseSales.md,0/1/019bd35dee91ef30b1021dd3ebcb13aa8fc70da8
+E
+src/router/Contact.js,3/e/3efa358d314306e1edb4a5ce4faf3d044514de57
+N
+src/aboutProps/Parent_state.js,d/0/d0ad5a9de81a274949eba1e96396b8605d3b3fa8
