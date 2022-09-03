@@ -4,6 +4,8 @@ Props are the properties stored on Global scope.
 you can pass props to pass values from parent to
 child inorder to communicate.
 
+Props can't be modified and stateless compared to state 
+
 
 ###Define global properties of Parent
 

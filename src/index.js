@@ -15,18 +15,19 @@ Timer
 */
 
 
-/*
+
 
 ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
-*/
+
 
 
 
 
 /*for Router */
+/*
 
 
 import  {
@@ -54,3 +55,4 @@ ReactDOM.render(<Router>
 </Router>
     ,
     document.getElementById('root'));
+*/

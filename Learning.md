@@ -5,7 +5,7 @@ codepen.io/open
 
 My codepen examples :  https://codepen.io/your-work/
 
-Babel is transcoder which will convert into uderstanable js by browers.  (trancoder example : bable /typescript/ livescript /coffie script)
+Babel is transcoder which will convert into understandable js by browsers.  (transcoder example : bable /typescript/ livescript /coffie script)
 
 ES (ecmascript ) -is latest javascript version.
 
@@ -16,6 +16,16 @@ CDN - content delivery network where you can find different java script
 
 codePan -- in js property file select react , and react-dom.  for any error you can on refer console in codepen.io
 for react development you need react.min.js and react.dom.js
+
+you need to have node.js  and npm for working in react.
+**create react project**
+
+//   create my-app react project by below command for node version above 5.02
+
+**npx create-react-app**  my-app
+
+
+
 
 
 1. Html --><div id="root"></div>
@@ -50,7 +60,8 @@ start my-app ==> to run my-app
 
 ------------------------------------------------------
 
-why react is fast because it work on virtual dom not on the real dom ( so if anything updated on virtual dom it will update that field only in real dom.
+why react is fast because it work on virtual dom not on the real dom and one way data binding ( so if anything updated 
+on virtual dom it will update that field only in real dom.
 
 
 Chepter 2.
@@ -70,7 +81,7 @@ this will always return a one enclosing component. like here only one div compon
 - After declaring component there is two ways to export component
 
 1 . export default Header; (at end of component file )
-2.  usning export default  just before component defintion . Ex.
+2.  using export default  just before component definition . Ex.
 
 export default function Header(){
 <div></div>
@@ -94,6 +105,10 @@ virtual dom --> only update changed part in dom so only that part got render not
 Props and  state (lifecycle)
 
 by using Props you transfer data between two components so that they can 
-communicates.
+communicate.
 
 
+pure component
+---------------
+
+will render once anything is updated on it otherwise not. better performance than component.

@@ -34,7 +34,7 @@ class App extends Component {
         <Test></Test>*/}
       {/*1. prop Example*/}
 
-      {/*<Parent></Parent>*/}
+      <Parent></Parent>
 
 
       {/*2. State Example*/}
@@ -54,7 +54,10 @@ class App extends Component {
      {/* <TimerApp start= {Date.now()}/>*/}
 
       {/*6. Course sales*/}
-     <CourseSales mycourse={course}/>
+   {/*  <CourseSales mycourse={course}/>*/}
+
+
+
 
 
 
