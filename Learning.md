@@ -24,6 +24,22 @@ you need to have node.js  and npm for working in react.
 
 **npx create-react-app**  my-app
 
+**other way better than create react**
+
+https://vitejs.dev/guide/
+npm create vite@latest 
+or npm create vite@latest tasktrek --- --template React
+1. give project name
+2. select 
+3. ![img.png](img.png)
+
+JSX-- java script html
+
+JSX comtains java + html
+babel convert jsx-->javascript
+![img_2.png](img_2.png)
+![img_1.png](img_1.png)
+
 
 
 
