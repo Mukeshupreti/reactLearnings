@@ -4,6 +4,7 @@ import { PropsExV1, PropsExV2 } from "./PropsEx";
 import { StateEx, StateExV2, StateExV3, StateExV4 } from "./StateEx";
 import { ExternalStyle, InlineStyle } from "./StylingEx";
 import ClassComp from "./ClassComp";
+import { UseEffectNormal } from "./UseEffectTimer";
 
 export default function C1() {
   return (
@@ -33,6 +34,8 @@ export default function C1() {
       <h1 style={{ color: "blue", background: "yellow" }}>Class example</h1>
 
       <ClassComp></ClassComp>
+      <h1 style={{ color: "blue", background: "yellow" }}>Use Effect Lifecycle hook for Funtional component</h1>
+      <UseEffectNormal></UseEffectNormal>
     </>
   );
 }
