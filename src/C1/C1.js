@@ -34,7 +34,9 @@ export default function C1() {
       <h1 style={{ color: "blue", background: "yellow" }}>Class example</h1>
 
       <ClassComp></ClassComp>
-      <h1 style={{ color: "blue", background: "yellow" }}>Use Effect Lifecycle hook for Funtional component</h1>
+      <h1 style={{ color: "blue", background: "yellow" }}>
+        Use Effect Lifecycle hook for Funtional component
+      </h1>
       <UseEffectNormal></UseEffectNormal>
     </>
   );

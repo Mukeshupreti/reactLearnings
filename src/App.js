@@ -10,6 +10,7 @@ import Blog from "./blogCopy/Blog";
 import TimerApp from "./Timer/TimerApp";
 import StateEx from "./C1/StateEx";
 import C1 from "./C1/C1";
+import C2 from "./C2/C2";
 /*import CourseSales from "./courseSales/CourseSales";*/
 
 class App extends Component {
@@ -29,7 +30,8 @@ class App extends Component {
         <Test></Test>*/}
         {/*1. prop Example*/}
 
-        <C1></C1>
+        {/* <C1></C1> */}
+        <C2></C2>
 
         {/* <Parent></Parent> */}
 
