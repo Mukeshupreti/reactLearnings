@@ -36,3 +36,24 @@ p ,h3{
 
 }
 
+.chapter {
+  
+  font-size: 25px;
+  background: blue;
+  text-align: center;
+
+}
+
+.example {
+  font-size: 25px;
+  background: green;
+  text-align: center;
+
+}
+
+.heading {
+  background: violet;
+  text-align: center;
+
+}
+
