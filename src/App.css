@@ -56,4 +56,15 @@ p ,h3{
   text-align: center;
 
 }
+/* styling inbuild tag like ul and li */
+ul {
+list-style-type:none;   /* remove bullet in list */
+
+}
+
+li {
+text-decoration: none; /* Remove underline from hyperlink*/
+padding: 10px; /* space between two items */
+display: inline-block;  /* it will display all the item of list in one line  */
+}
 

@@ -4,7 +4,7 @@ import Home from "./router/Home";
 import Contact from "./router/Contact";
 import App from './App';
 import './index.css';
-
+import {BrowserRouter} from "react-router-dom"
 /*
 for below project uncomment below line
 aboutProps
@@ -18,7 +18,9 @@ Timer
 
 
 ReactDOM.render(
-  <App />,
+ <BrowserRouter>
+  <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

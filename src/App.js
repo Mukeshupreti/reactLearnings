@@ -14,6 +14,7 @@ import C2 from "./C2/C2";
 import C3 from "./C3/C3";
 import C4 from "./C4/C4";
 import C5 from "./C5/C5";
+import C6 from "./C6/C6";
 /*import CourseSales from "./courseSales/CourseSales";*/
 
 class App extends Component {
@@ -37,7 +38,8 @@ class App extends Component {
         {/* <C2></C2> */}
         {/* <C3></C3> */}
         {/* <C4></C4> */}
-        <C5></C5>
+        {/* <C5></C5> */}
+        <C6></C6>
 
         {/* <Parent></Parent> */}
 
