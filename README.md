@@ -37,9 +37,11 @@
 ##
 
 
-
-
-
+# Some Important shortcut
+### open web preview  ==> ctrl+shift+P
+### replace all ocurrence in file  ==> Ctrl+D
+### comment line  ==>crtl+shift+A
+### format file with pritty printer  ==> ctrl+shift+I
 
 
 # Getting Started with Create React App

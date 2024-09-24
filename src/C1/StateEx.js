@@ -4,7 +4,7 @@ const StateEx = () => {
   //Note : use state is useful for funtional component only.
   //it hook
   const [counter, setCounter] = useState(0);
-  //use state return value (any value and its setter funtion)
+  //use state return array value (any value and its setter funtion)
   return (
     <>
       <h1>{counter}</h1>
@@ -28,9 +28,11 @@ const StateExV2 =() =>{
    }
 
   const [counter, setCounter] = useState(()=>initialState());
-//  useState(()=>initialState()) // evertime render will called expentive process
+  // for primitive type   const [counter, setCounter] = useState(0); lazy initilization is not needed
+//  useState(initialState())// useState is called everytime render so expesive funtion initialState() will call everytime load of page
+//load
 
-//  useState(initialState()) //lazy initilization. only first time
+//  useState(()=>initialState()) //lazy initilization. only first time
 // expesive proccess called not on every render when we change state
 
   return (
@@ -90,6 +92,7 @@ const StateExV3 = () => {
 const StateExV4 = () => {
   
   const [obj, setCounter] = useState(
+    //object literal
     {
      counter:0,
      mFlag:true
@@ -127,7 +130,7 @@ const StateExV4 = () => {
       <h2>Boolen value  : {obj.mFlag}</h2> 
       {/* to print Boolen use toString() */}
       <h2>Boolen value with to string :{obj.mFlag.toString()}</h2>
-      <button onClick={handleToggle}>Toggle</button>
+      <button onClick={handleToggle}>Toggle Function between increment and decrement</button>
     </>
   );
 

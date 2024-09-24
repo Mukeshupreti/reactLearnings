@@ -5,7 +5,7 @@ import "../App.css";
 const InlineStyle= ()=>{
 
 return(
-
+       //object litral inside or you can create seprate variable
     <h2 style={{background:"green"}}>inline style</h2>
 
 );

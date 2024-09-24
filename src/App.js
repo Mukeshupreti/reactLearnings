@@ -15,7 +15,18 @@ import C3 from "./C3/C3";
 import C4 from "./C4/C4";
 import C5 from "./C5/C5";
 import C6 from "./C6/C6";
-/*import CourseSales from "./courseSales/CourseSales";*/
+import C8 from "./C8/C8";
+import C12 from "./C12/C12";
+import C13 from "./C13/C13";
+import { C9 } from "./C9/C9";
+
+import { C10 } from "./C10/C10";
+import { C11 } from "./C11/C11";
+import { C92 } from "./C9/CombineReducer&ActionConst/component/C92";
+import { Provider } from "react-redux";
+import { fruitStore } from "./C9/ReduxWIthFunctionalComp/component/store/Productstore";
+import { combineStore } from "./C9/CombineReducer&ActionConst/component/store/CombineReducer";
+import { reduxStore } from "./C11/CombineReducer&ActionConst/component/store/CombineReducer";
 
 class App extends Component {
   render() {
@@ -34,12 +45,33 @@ class App extends Component {
         <Test></Test>*/}
         {/*1. prop Example*/}
 
-        {/* <C1></C1> */}
+         <C1></C1>
         {/* <C2></C2> */}
         {/* <C3></C3> */}
         {/* <C4></C4> */}
         {/* <C5></C5> */}
-        <C6></C6>
+        {/* <C6></C6> */}
+        {/* <C8></C8> */}
+        {/*   without combined  */}
+        {/*    <Provider store={fruitStore}>
+        <C9></C9>
+        </Provider>
+ */}
+        {/* withCombinder  and Action */}
+        {/*    <Provider store={combineStore}>
+        <C92></C92>
+        </Provider> */}
+
+        {/*     <Provider store={combineStore}>
+          <C10></C10>
+        </Provider> */}
+{/* 
+        <Provider store={reduxStore}>
+          <C11></C11>
+        </Provider> */}
+
+        {/* <C12></C12> */}
+        {/*  <C13></C13> */}
 
         {/* <Parent></Parent> */}
 

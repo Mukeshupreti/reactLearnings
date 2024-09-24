@@ -21,7 +21,7 @@ export default function C1() {
       <h1 style={{ color: "blue", background: "yellow" }}>Property example </h1>
       <PropsExV1 name="Atul" salary="3000$"></PropsExV1>
       <PropsExV2 name="Rajesh" salary="3000$"></PropsExV2>
-
+      <PropsExV2 name="Ravi" salary="3000$"></PropsExV2>
       <h1 style={{ color: "blue", background: "yellow" }}>State Example</h1>
       <StateEx></StateEx>
       <StateExV2></StateExV2>
