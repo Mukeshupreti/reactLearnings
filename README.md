@@ -53,6 +53,9 @@
 
 # run application Ctr+Alt+P (open web preview)
 
+## check connected remote repository
+### 1. git remote -v
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
