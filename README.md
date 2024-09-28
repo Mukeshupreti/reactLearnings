@@ -37,6 +37,11 @@
 ##
 
 
+# Run project commond
+ ### 1. cd /home/mukeshupreti/Documents/learning/Econtract KT/work/react/reactLearnings
+### 2. npm start
+
+
 # Some Important shortcut
 ### open web preview  ==> ctrl+shift+P
 ### replace all ocurrence in file  ==> Ctrl+D

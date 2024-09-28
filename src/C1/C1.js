@@ -6,6 +6,10 @@ import { ExternalStyle, InlineStyle } from "./StylingEx";
 import ClassComp from "./ClassComp";
 import { UseEffectNormal } from "./UseEffectTimer";
 import { UseEffectWithDepedency } from "./UseEffectWithDependecy";
+import UseRefClassComp from "./useRefEx/UseRefClassComp";
+import UseRefunComp from "./useRefEx/UseRefFunctionalComp";
+
+
 
 export default function C1() {
   return (
@@ -45,6 +49,18 @@ export default function C1() {
       UseEffectWithDepedency
       </h1>
       <UseEffectWithDepedency></UseEffectWithDepedency>
+
+      <h1 style={{ color: "blue", background: "yellow" }}>
+      useRef with Class component
+      </h1>
+     <UseRefClassComp></UseRefClassComp>
+
+
+     <h1 style={{ color: "blue", background: "yellow" }}>
+      useRef with functional component
+      </h1>
+     <UseRefunComp></UseRefunComp>
+
     </>
   );
 }

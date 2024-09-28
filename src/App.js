@@ -27,6 +27,7 @@ import { Provider } from "react-redux";
 import { fruitStore } from "./C9/ReduxWIthFunctionalComp/component/store/Productstore";
 import { combineStore } from "./C9/CombineReducer&ActionConst/component/store/CombineReducer";
 import { reduxStore } from "./C11/CombineReducer&ActionConst/component/store/CombineReducer";
+import Memo from "./C1/useMemo/Memo";
 
 class App extends Component {
   render() {
@@ -45,7 +46,8 @@ class App extends Component {
         <Test></Test>*/}
         {/*1. prop Example*/}
 
-         <C1></C1>
+         {/* <C1></C1> */}
+         <Memo></Memo>
         {/* <C2></C2> */}
         {/* <C3></C3> */}
         {/* <C4></C4> */}

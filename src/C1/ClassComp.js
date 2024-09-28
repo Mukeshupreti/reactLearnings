@@ -27,6 +27,7 @@ import React, { Component } from "react";
 
 
 export default class App extends Component {
+  /// like use State
   state = {
     counter: 0,
   };
@@ -44,18 +45,22 @@ export default class App extends Component {
       // callback function : optional
       () => {
         console.log("handle click is called");
+        // callback function will get called after state update and render get called
       }
     );
     // setState(updaterfunction,[callback])
   };
 
   handldeClickWithChangeObject = () => {
+    // gettting the state use this.state.{key in object literal}
     let cnt = this.state.counter;
     cnt++;
     //setState(changeObject,[callback])
+    // directly pass change object in this.setState
     this.setState({ counter: cnt });
   };
-
+// kind of constructor used for initilization of component only once
+// get called once component is inizilized first time /first time render
   componentDidMount=() =>{
  
     console.log("CDM");
@@ -71,6 +76,7 @@ export default class App extends Component {
   }
 
   render() {
+    console.log("rendered !!")
     return (
       <>
         <h1>counter value in class component {this.state.counter}</h1>
