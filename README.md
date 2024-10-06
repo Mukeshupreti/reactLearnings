@@ -60,6 +60,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### google drive link of notes
+https://docs.google.com/document/d/1ljG6IkO_YsVT9vEBUuzcI9ustmpFwOclcsWh-vevkwA/edit
+
 ## Available Scripts
 
 In the project directory, you can run:

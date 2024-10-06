@@ -16,7 +16,7 @@ const ProductList = (props) => {
       <li key={index}>{element.name}</li>
     ));
   } else {
-    return <h1>no product available</h1>;
+    return <h1 style={{color:"blue", background:"yellow"}}>no product available</h1>;
   }
 };
 // Ternary opeator

@@ -38,7 +38,7 @@ const SyntheticEvent = () => {
 };
 
 const TextBoxEvent = () => {
-  const [content, SetContent] = useState();
+  const [content, setContent] = useState();
 
   // assume getData not passing any paramenter
   // means getData(e) and getData() are same
@@ -47,7 +47,7 @@ const TextBoxEvent = () => {
   const getData = (e) => {
     console.log("TextBoxEvent: ", e);
     console.log("TextBoxEvent:", e.target.value);
-    SetContent(e.target.value);
+    setContent(e.target.value);
   };
   return (
     <>

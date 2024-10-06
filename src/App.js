@@ -50,9 +50,9 @@ class App extends Component {
          {/* <Memo></Memo> */}
         {/* <C2></C2> */}
         {/* <C3></C3> */}
-        <C4></C4>
+        {/* <C4></C4> */}
         {/* <C5></C5> */}
-        {/* <C6></C6> */}
+        <C6></C6>
         {/* <C8></C8> */}
         {/*   without combined  */}
         {/*    <Provider store={fruitStore}>

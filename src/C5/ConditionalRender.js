@@ -8,8 +8,9 @@ const IfElseRendering = () => {
     <>
       <h1 className="example">Example 1 : If else redering example</h1>
       <div className="heading">
+        {/* two way to covert into string */}
         <input type="checkbox" onChange={handleAdmin}></input>
-        is Admin {admin.toString()}
+        is Admin {admin.toString()} // {JSON.stringify(admin)}
         <hr></hr>
       </div>
 
