@@ -47,10 +47,10 @@ class App extends Component {
         {/*1. prop Example*/}
 
          {/* <C1></C1> */}
-         <Memo></Memo>
+         {/* <Memo></Memo> */}
         {/* <C2></C2> */}
         {/* <C3></C3> */}
-        {/* <C4></C4> */}
+        <C4></C4>
         {/* <C5></C5> */}
         {/* <C6></C6> */}
         {/* <C8></C8> */}

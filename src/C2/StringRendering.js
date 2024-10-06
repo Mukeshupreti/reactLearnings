@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 // show fruits as list
 //
 const StringRenderV1 = () => {
@@ -40,6 +39,10 @@ const StringRenderV2 = () => {
   );
 };
 
+const ListItem = (props) => {
+  return <li>{props.x}</li>;
+};
+
 const StringRenderV3 = () => {
     const temp = ["Apple", "Banana", "Grapes", "Oranges"];
     const [fruits, setFruits] = useState(temp);
@@ -55,8 +58,6 @@ const StringRenderV3 = () => {
     );
   };
 
-const ListItem = (props) => {
-  return <li>{props.x}</li>;
-};
+
 
 export { StringRenderV1, StringRenderV2 ,StringRenderV3};

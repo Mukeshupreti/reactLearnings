@@ -38,7 +38,11 @@ export default class App extends Component {
     // set state takes two parameter state, props
     // first funtion is updater function and console logs priting we are using
     // callback method
+    //way one
+     // setState(updaterfunction,[callback])
     this.setState(
+
+
       (state, props) => {
         return { counter: cnt };
       },
@@ -48,14 +52,15 @@ export default class App extends Component {
         // callback function will get called after state update and render get called
       }
     );
-    // setState(updaterfunction,[callback])
+   
   };
-
+// way 2 
+////setState(changeObject,[callback])
   handldeClickWithChangeObject = () => {
     // gettting the state use this.state.{key in object literal}
     let cnt = this.state.counter;
     cnt++;
-    //setState(changeObject,[callback])
+    
     // directly pass change object in this.setState
     this.setState({ counter: cnt });
   };
@@ -65,7 +70,7 @@ export default class App extends Component {
  
     console.log("CDM");
   }
-
+  /// kind of distrcutor
   componentWillUnmount(){
     console.log("componentWillUnmount");
   }

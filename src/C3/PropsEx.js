@@ -20,7 +20,7 @@ const PropsEx1 = () => {
       <DemoComponent xyx></DemoComponent>
       {/* passing complete object literal as props using spread attribute */}
       <DemoComponent1 {...product}></DemoComponent1>
-
+       {/* Tag value will be passed as childers in props */}
       <DemoComponent2 value="5">TagValue</DemoComponent2>
 
       <DemoComponent3 value="6">
@@ -38,7 +38,7 @@ const PropsEx1 = () => {
 const DemoComponent = (props) => {
   return (
     <>
-      This is props object :{JSON.stringify(props)}
+      This is props object :{JSON.stringify(props)} 
       <h1>value :{props.xyx} </h1>
     </>
   );
@@ -47,9 +47,9 @@ const DemoComponent = (props) => {
 const DemoComponent1 = (props) => {
   return (
     <>
-      This is props object :{JSON.stringify(props)}
+    DemoComponent1:  This is props object :{JSON.stringify(props)}
       <h1>
-        pcode :{props.pcode} : pName {props.pName}{" "}
+        pcode :{props.pcode} : pName {props.pName}
       </h1>
     </>
   );
@@ -58,16 +58,17 @@ const DemoComponent1 = (props) => {
 const DemoComponent2 = (props) => {
   return (
     <>
-      This is props object :{JSON.stringify(props)}
+      DemoComponent2 :This is props object :{JSON.stringify(props)}
       <h1>
-        value :{props.value} DemoContent : {props.children}{" "}
+        value :{props.value} DemoContent : {props.children}
       </h1>
     </>
   );
 };
 
 const DemoComponent3 = (props) => {
-  return <>{props.children}</>;
+
+  return <> DemoComponent3 :{props.children}</>;
 };
 
 export default PropsEx1;
