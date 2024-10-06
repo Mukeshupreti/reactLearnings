@@ -7,9 +7,10 @@ const EventHandleV1 = () => {
   return (
     <>
       <h1 className="example">Example 1: function call with parenthisis</h1>
-      {/* this get data will call every time when page is refresh or load not
-       on click of button */}
-
+      {/* this get data will call every time when page is refresh or load
+        */}
+      {/* this will not get called on click due to '()' as this getData not take any 
+      arugument  */}
       <button onClick={getData()}> Get Data wrong way</button>
       {/* both below way is correct when you use '()' in funtion call */}
       <button onClick={getData}> Get Data correct way version1</button>
@@ -19,8 +20,9 @@ const EventHandleV1 = () => {
   );
 };
 // Synthetic Event is cross browser wrapper arround browser Native event so
-// you dont need to worry about cross browser navtive event
-// its automatically passed to every function
+// you dont need to worry about cross browser native event
+// its automatically passed to every function for example in print function
+// we are not paasing and event but print function accpeting event (sythetic event)
 const SyntheticEvent = () => {
   const print = (e) => {
     console.log("SyntheticEvent :", e);
@@ -37,6 +39,11 @@ const SyntheticEvent = () => {
 
 const TextBoxEvent = () => {
   const [content, SetContent] = useState();
+
+  // assume getData not passing any paramenter
+  // means getData(e) and getData() are same
+  // i.e onChange Function we can see {getData}
+  // not {getData()}
   const getData = (e) => {
     console.log("TextBoxEvent: ", e);
     console.log("TextBoxEvent:", e.target.value);
