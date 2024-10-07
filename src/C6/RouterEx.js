@@ -41,6 +41,10 @@ const RouterEx1 = () => {
   );
 };
 // Added product submenu (with apple /bannaa,orgagnes etc) in ProudctV1
+// in ProductV1 version when you click on submennu item eg :banna submenu disappear
+// to fix this use subrouts which tell product have submenu (apple/bannan etc)
+//<outlet> tag in ProductV2 to show product details appers when clicked on submenu
+//item
 const RouterUseParamEx = () => {
   return (
     <>
@@ -67,10 +71,12 @@ const RouterUseParamEx = () => {
     </>
   );
 };
+
 // in ProductV1 version when you click on submennu item eg :banna submenu disappear
 // to fix this use subrouts which tell product have submenu (apple/bannan etc)
 //<outlet> tag in ProductV2 to show product details appers when clicked on submenu
 //item
+
 const NestedRouterEx = () => {
   return (
     <>

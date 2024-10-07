@@ -45,7 +45,9 @@ const ProductV2 = () => {
         </li>
       </ul>
       I am home ProductV2
-      <Outlet />
+      <Outlet /> 
+      {/* using outlet will not disapper fruit menu which was problem in productV1.
+      and outlet will replace by productDetail component */}
     </>
   );
 };
@@ -59,21 +61,21 @@ const InvalidProduct = () => {
 };
 
 const ProductV3 = () => {
-  const [product, setProduct] = useState([
+  const [products, setProducts] = useState([
     { id: "1", name: "apple", price: "50" },
-    { id: "1", name: "banana", price: "50" },
-    { id: "1", name: "oragnes", price: "50" },
-    { id: "1", name: "kiwi", price: "50" },
+    { id: "2", name: "banana", price: "50" },
+    { id: "3", name: "oragnes", price: "50" },
+    { id: "4", name: "kiwi", price: "50" },
   ]);
   return (
     <>
       <ul>
-        {product.map((prod, index) => {
+        {products.map((prod, index) => {
           return (
             <li key={index}>
-              <Link to={'/productV3/${prod.id}'}>{prod.name}</Link>
+              <Link to={`/productV3/${prod.id}`}>{prod.name}</Link>
             </li>
-          );
+          )
         })}
       </ul>
       I am home ProductV2
