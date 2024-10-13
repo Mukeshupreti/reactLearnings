@@ -8,10 +8,10 @@ const C8 = () => {
     <>
       <h1 className="chapter"> Chapter 8 context API </h1>
       <Product></Product>
-      <h1 className="example"> with Context API</h1>
+       <h1 className="example"> with Context API</h1>
       <ProductWithContextAPI></ProductWithContextAPI>
       <h1 className="example"> with Context API only change is useContext Hook for reading total</h1>
-      <ProductWithContextAPIUseconsumerHook></ProductWithContextAPIUseconsumerHook>
+      <ProductWithContextAPIUseconsumerHook></ProductWithContextAPIUseconsumerHook> 
     </>
   );
 };

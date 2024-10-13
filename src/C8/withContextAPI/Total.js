@@ -1,6 +1,9 @@
 import React from "react";
 import { TotalContext } from "./store/TotalContext";
 
+
+  // STEP 3: consume value from store 
+  //  inside   <TotalContext.Consumer> use function  (total)=>{return jxs}
 const Total = () => {
   return (
     <>

@@ -44,7 +44,10 @@ const ProductWithContextAPI = () => {
       </select>
       {console.log("cart", cart)}
       {console.log("total", total)}
-     {/*  //Step 2 : put inside all the component who need total provider here provide datea to cart and total that why we call it provider  */}
+     {/*  //Step 2 : put inside all the component who need total provider here provide data
+      to cart and total that why we call it provider  */}
+
+      {/* // context provides the "value" to the component */}
       <TotalContext.Provider value={total}> 
 
         <Cart items={cart}></Cart>

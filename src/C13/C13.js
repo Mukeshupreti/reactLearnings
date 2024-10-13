@@ -9,7 +9,6 @@ const C13 = () => {
       Chapter 13 Custom hook : called Global Function
     </h1>
     <WithOutCustomHook/>
-    
     <ContainerEx1></ContainerEx1>
     <FetchApiWithCustomHook></FetchApiWithCustomHook>
     </>

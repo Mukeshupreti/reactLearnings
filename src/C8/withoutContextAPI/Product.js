@@ -12,7 +12,7 @@ const Product = () => {
 
   const [cart, setcart] = useState([]);
   const [total, setTotal] = useState(0);
-
+// handle the drop down change event
   const handleOnChange = (e) => {
   /*   console.log("target:", e.target);
     console.log("target value:", e.target.value);
@@ -34,6 +34,7 @@ const Product = () => {
   return (
     <>
       <h1 className="example">--------------Products--------------</h1>
+      {/* populate the  drop down with product */}
       <select onChange={handleOnChange}>
         {products.map((product, index) => (
           <option key={index} value={product.price}>

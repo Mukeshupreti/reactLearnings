@@ -19,7 +19,7 @@ import { TotalContext } from "./store/TotalContext";
 
 // new Approch with context hook
 const TotalUseContext = () => {
-  const total = useContext(Total0Context);
+  const total = useContext(TotalContext);
   return <><h1> Total component</h1>Total : {total}</>;
 };
 

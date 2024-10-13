@@ -16,7 +16,7 @@ const ContainerEx1 = () => {
     </>
   );
 };
-
+// this custom hook return  increment function which is used in button button click
 const useCustomHook = (initialValue, ComponentName) => {
   const [count, setCount] = useState(initialValue);
 

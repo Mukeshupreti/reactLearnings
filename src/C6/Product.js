@@ -73,6 +73,7 @@ const ProductV3 = () => {
         {products.map((prod, index) => {
           return (
             <li key={index}>
+              {/* "`` keyboard beside 1 are required to execute dynamic expression" */}
               <Link to={`/productV3/${prod.id}`}>{prod.name}</Link>
             </li>
           )

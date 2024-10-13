@@ -33,19 +33,24 @@ const FetchApi = () => {
   };
 
   const getException = () => {
-    fetch("https://jsonplaceholder.typicode.com/user") // wrong url to show erro handling
+    fetch("https://jsonplaceholder.typicode.com/user") // wrong url to show error handling
       .then((response) => {
         if (response.ok) {
           return response.json();
         } else {
+
+          /// Flow step 1
+          // This code will be executed as url is wrong
           // Manually we have to throw error as Feach API dont show any error code or
           // error
           setErrorFlag(true);
+          // we are making error flag true to error componet will get printed at line 62
           throw new Error();
         }
       })
       .then((json) => setUsers(json))
       .catch((error) => {
+        //Flow Step 2
         console.log("error object ", error);
         // setErrorFlag(true); not require as fetch API not throw specfic error or error code
       }); ///
