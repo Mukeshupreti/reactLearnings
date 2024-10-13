@@ -46,6 +46,7 @@ class App extends Component {
         <Test></Test>*/}
         {/*1. prop Example*/}
 
+
          {/* <C1></C1> */}
          {/* <Memo></Memo> */}
         {/* <C2></C2> */}
