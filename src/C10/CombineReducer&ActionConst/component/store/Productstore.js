@@ -13,7 +13,7 @@ const initData = {
 };
 // this funtion will be called from product component
 // when you change selection in product drop down
-const productReducer = (state = initData, action) => {
+ const productReducer = (state = initData, action) => {
   // here PURCHASE is action imported
   if (action.type === actions.PURCHASE) {
     // this will return new updated state
@@ -36,5 +36,5 @@ const productReducer = (state = initData, action) => {
   return state;
 };
 
+export default  productReducer
 
-export { productReducer };

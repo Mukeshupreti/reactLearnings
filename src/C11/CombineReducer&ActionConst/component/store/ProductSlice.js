@@ -24,18 +24,18 @@ const productSlice = createSlice({
     },
     deleteItem: (state, action) => {
       // change pay'L'oad  to pay'l'oad
-      (state.cart = state.cart.filter(
+      state.cart = state.cart.filter(
         (i, index) => index != action.payload.index
-      )),
-        (state.total = state.total - action.payload.price);
+      ),
+        state.total = state.total - action.payload.price;
     },
   },
 });
-const {productReducer}=productSlice.reducer;
+//const {productReducer}=productSlice.reducer;
 // exporting action i.e is purchase and deleteItem action
 export const { purchase, deleteItem } = productSlice.actions;
 
-export {productReducer};
+export default productSlice.reducer;
 
 /* /* // this funtion will be called from product component
 // when you change selection in product drop down

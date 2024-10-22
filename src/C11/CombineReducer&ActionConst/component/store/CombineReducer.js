@@ -1,28 +1,31 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { productReducer } from "./ProductSlice";
-import { loginReducer } from "./LoginSlice";
 
+import { configureStore } from '@reduxjs/toolkit';
+import loginReducer  from './LoginSlice';
+import productReducer from './ProductSlice';
+// and thunk and applyMiddleware
 
-//import { combineReducers,createStore } from 'redux';
+/// combined Reducer takes reducer function
 
-// configureStore() will create store & will also combineReducers for us.
-
-/* const rootReducer = combineReducers({
-    pr:productReducer,
-    lr:loginReducer
-  })
-   
   
-  const combineStore = createStore(rootReducer);
-   
-*/
-
-const reduxStore = configureStore({
-  reducer: {
-    pr: productReducer,
-    lr: loginReducer,
-  },
-});
+  // ADD midddle ware
+  //const combineStore = createStore(rootReducer,applyMiddleware(thunk));
 
 
-export{reduxStore}
+  const reduxStore=configureStore(
+
+     {
+
+      reducer :{
+       pr: productReducer,
+       lr:loginReducer
+
+      }
+
+     }
+
+  )
+
+  export{reduxStore}
+
+
+  

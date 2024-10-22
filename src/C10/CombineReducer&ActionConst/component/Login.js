@@ -1,17 +1,18 @@
-import { useSelector,useDispatch } from "react-redux";
+import { useSelector,useDispatch, } from "react-redux";
 import { validateUser } from "./store/action";
 const Login=()=>{
     const users = useSelector(state=>state.lr.users);
     console.log(users);
-    const dispatch = useDispatch();
+     const dispatch = useDispatch();
     const loginHandler=(e)=>{
         let loginDet = e.target.options[e.target.selectedIndex].text;
-        console.log(loginDet);
+        
+        console.log(" hello :" + loginDet);
         // here below line its you can rename  payload to  loggedInUser
        /// dispatch({type:LOGIN,loggedInUser:loginDet});
        // call API call for impure funtions
 
-       dispatch(validateUser(loginDet));
+       dispatch(()=>validateUser(loginDet));
     }
 
     return(

@@ -7,11 +7,11 @@ const initialState = {
   loggedInUser: "None",
 };
 
-const loginSlice = createSlice({
+export const loginSlice = createSlice({
   name: "login",
   initialState, //ES6 automatically iniitilize initialState from initialState object at line number 6 //other variation without Es6
   // you can see in productSlice.js where   initialState: initData, //
-
+ // so if initialState name(in slice) is same as intialState(const Name) so you dont need initialState:initialState
   reducers: {
     userLogin: (state, action) => {
       //state.loggedInUser = action.loggedInUser;
@@ -20,10 +20,11 @@ const loginSlice = createSlice({
   },
 });
 
-const {loginReducer}=loginSlice.reducer;
+//const {loginReducer}=loginSlice.reducer;
 
 export const {userLogin} =loginSlice.actions;
-export {loginReducer};
+export default  loginSlice.reducer;
+//export {loginReducer};
 
 /* // this funtion will be called from product component
 // when you change selection in product drop down

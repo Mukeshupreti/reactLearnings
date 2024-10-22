@@ -56,20 +56,20 @@ class App extends Component {
         {/* <C6></C6> */}
         {/* <C8></C8> */}
           {/* without combined  */}
-        <Provider store={fruitStore}>
+        {/* <Provider store={fruitStore}>
         <C9></C9>
-        </Provider>
+        </Provider> */}
 
         {/* withCombinder  and Action */}
-           {/* <Provider store={combineStore}>
+        <Provider store={combineStore}>
         <C92></C92>
-        </Provider> */}
+        </Provider>
 
-        {/*     <Provider store={combineStore}>
+         {/* <Provider store={combineStore}>
           <C10></C10>
-        </Provider> */}
-{/* 
-        <Provider store={reduxStore}>
+        </Provider>  */}
+
+        {/* <Provider store={reduxStore}>
           <C11></C11>
         </Provider> */}
 
